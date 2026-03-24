@@ -26,11 +26,6 @@
 - `README.md` (Modified)
 - `src/doc/LOG_TRACE.md` (New)
 
-### Notes:
-- The color `2016` (0x07E0) was used for classic Space Invaders green.
-- Sprite frames were generated as 13x8 pixel PNGs (base64 encoded).
-- Coordinates were chosen to fit within the 64x64 display.
-
 ---
 
 # Log Trace - Amar é Theme Implementation
@@ -41,19 +36,21 @@
 
 ### Steps taken:
 1. Created a python script to load `amareh.png` using PIL.
-2. Resized the image to 64x64 using Lanczos resampling.
-3. Converted the image to a base64 encoded PNG.
-4. Created `shared/amareh.json` with the base64 image as the background setup and a clock on top.
-5. Verified the theme using the simulator and captured a thumbnail.
-6. Added the `thumbnails/amareh.png` to the `README.md`.
-7. Cleaned up temporary scripts and text files.
-
-8. Blended the removed signature area with the background gradient.
-9. Added 5 dynamic text phrases ("Fazer conchinha...", "Dar de comer...", etc.) using a 600-frame text sprite animation that changes phrases every 1 minute.
-10. Adjusted text placement to the empty area on the right, colored it red with a white outline for contrast.
+2. Resized the image to 64x64 and converted to base64.
+3. Blended the removed signature area with the background gradient.
+4. Extracted musical notes into an animated sprite.
+5. Added 4 dynamic text phrases ("Fazer conchinha...", "Querer estar amarrados...", etc.) cycling every 1 minute.
+6. Replaced static background title with a custom "Amar e..." sprite.
+7. Updated all text (title, phrases, and clock) to use Red foreground on Black background for better readability.
+8. Repositioned phrases using a small `Geneva` font (8px) right-aligned in the upper area.
+9. Verified the theme using the simulator and captured a final thumbnail.
+10. Fixed overlapping text issue by combining the "Amar e..." title and the rotating phrases into a single, unified 64x32 sprite using a sharp TrueType font (`Geneva` at size 8-9) to ensure they fit perfectly in the upper-right corner.
+11. Set phrases to be right-aligned with a red foreground and black outline on a transparent background.
+12. Increased font sizes by 25% (from 6/7pt to 8/9pt) for better visibility while maintaining proper layout.
+13. Added 3 new phrases ("Comer Juntos", "Ficar agarrados", "Fazer Conchinha") that change every minute, aligned to the bottom half of the screen using the matching 9.1pt Geneva font.
 
 ### Files Created/Modified:
-- `shared/amareh.json` (Modified)
-- `thumbnails/amareh.png` (Modified)
+- `shared/amareh.json` (Final Version)
+- `thumbnails/amareh.png` (Updated)
 - `README.md` (Modified)
 - `src/doc/LOG_TRACE.md` (Modified)
