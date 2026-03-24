@@ -44,5 +44,7 @@ Hover the mouse pointer on the image the know the filename. Set this filename (w
 ![clock-club.png](thumbnails/clock-club.png "clock-club.json")
 ![goomba-clockface.png](thumbnails/goomba-clockface.png "goomba-move.json")
 ![umbrella-corporation.png](thumbnails/umbrella-corporation.png "umbrella-corporation.json")
+![space-invaders.png](thumbnails/space-invaders.png "space-invaders.json")
+![amareh.png](thumbnails/amareh.png "amareh.json")
 <!-- {{THUMBNAIL}} -->
 
