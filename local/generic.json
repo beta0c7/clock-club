@@ -1,26 +1,74 @@
 {
-  "name": "Amareh",
+  "name": "Space Invaders",
   "version": 1,
-  "author": "Gemini CLI",
+  "author": "beta0c7",
   "bgColor": 0,
   "delay": 500,
   "setup": [
     {
-      "type": "image",
-      "x": 18,
-      "y": 17,
-      "image": "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",
-      "id": "mkmh96"
+      "type": "text",
+      "content": "SPACE",
+      "font": "",
+      "fgColor": 2016,
+      "bgColor": 0,
+      "x": 20,
+      "y": 4
+    },
+    {
+      "type": "text",
+      "content": "INVADERS",
+      "font": "",
+      "fgColor": 2016,
+      "bgColor": 0,
+      "x": 10,
+      "y": 15
     },
     {
       "type": "datetime",
       "content": "H:i",
-      "font": "",
-      "fgColor": 63488,
+      "font": "square",
+      "fgColor": 2016,
       "bgColor": 0,
-      "x": 34,
-      "y": 2,
-      "id": "cfceq4"
+      "x": 17,
+      "y": 37
+    }
+  ],
+  "sprites": [
+    [
+      {
+        "id": "sprite_0_0",
+        "image": "iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAAMUlEQVR4nGNgQAb/gRAbwCWOUwFRGnBBvBrQNaPLEWUDThux2YBNMU5N+AKHJL+hAQC4rFul522udgAAAABJRU5ErkJggg=="
+      },
+      {
+        "id": "sprite_0_1",
+        "image": "iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAAMklEQVR4nGNgQAb/gRAbwCWOUwFRGnBBvBrQNaPLEWUDThux2YBNMU5N+AIHqzyRQQ4AURRXqQmFleYAAAAASUVORK5CYII="
+      }
+    ]
+  ],
+  "loop": [
+    {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 3,
+      "y": 54
+    },
+        {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 18,
+      "y": 54
+    },
+        {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 33,
+      "y": 54
+    },
+        {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 48,
+      "y": 54
     }
   ]
 }

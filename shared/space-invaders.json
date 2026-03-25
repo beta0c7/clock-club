@@ -1,27 +1,36 @@
 {
   "name": "Space Invaders",
   "version": 1,
-  "author": "Gemini CLI",
+  "author": "beta0c7",
   "bgColor": 0,
   "delay": 500,
   "setup": [
     {
       "type": "text",
-      "content": "SPACE INVADERS",
-      "font": "small",
+      "content": "SPACE",
+      "font": "",
       "fgColor": 2016,
       "bgColor": 0,
-      "x": 4,
-      "y": 2
+      "x": 20,
+      "y": 4
+    },
+    {
+      "type": "text",
+      "content": "INVADERS",
+      "font": "",
+      "fgColor": 2016,
+      "bgColor": 0,
+      "x": 10,
+      "y": 15
     },
     {
       "type": "datetime",
       "content": "H:i",
-      "font": "medium",
+      "font": "square",
       "fgColor": 2016,
       "bgColor": 0,
       "x": 18,
-      "y": 25
+      "y": 37
     }
   ],
   "sprites": [
@@ -40,8 +49,26 @@
     {
       "type": "sprite",
       "sprite": 0,
-      "x": 25,
-      "y": 45
+      "x": 3,
+      "y": 48
+    },
+        {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 18,
+      "y": 48
+    },
+        {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 33,
+      "y": 48
+    },
+        {
+      "type": "sprite",
+      "sprite": 0,
+      "x": 48,
+      "y": 48
     }
   ]
 }
